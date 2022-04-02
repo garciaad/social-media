@@ -1,17 +1,14 @@
 <template>
-<div class="latest">
-
-<h1>hi there!</h1>
+<div id="example-1">
 
 </div>
+
+
 </template>
 
 <script>
 
-
-
 </script>
-
 
 
 <style>

@@ -3,42 +3,31 @@
         <div class="loginInfo">
             <h1>FOLKS</h1>
             <h3>Let's get linked!</h3>
-            <div>
-                <input type="text" name="usuario" id="usuario">
-                <input type="password" name="pass" id="pass">
-                <input type="button" class="btn-dark" name="btnVerifivaca" id="btnVerifica" onclick="validar()" value="Login">
+            <div class="form">
+                <input type="text" name="usuario" id="usuario" v-model="usuario">
+                <input type="password" name="pass" id="pass" v-model="password">
+                <button class="log btn-dark" @click="showAlert">Login</button>
                 <h4>Forgot password</h4>
             </div>
             <h4>
-                <a href="signup.html">Sign up!</a>
+                <a href="../AboutView.vue">Sign up!</a>
             </h4>
 
             <p>Get the app</p>
 
             <div class="apps d-flex align-items-center justify-content-center ">
-                <img src="https://www.snapchat.com/static/style-guide/download/google-play-badge.svg" alt="">
-                <img src="https://www.snapchat.com/static/style-guide/download/appstore.svg" alt="">
+                <img src="@/assets/googleplay.svg" alt="">
+                <img src="@/assets/iosapp.svg" alt="">
             </div>
         </div>
+
+
 </div>
 </template>
 
 <script>
-function validar() {
-    var usuario = document.getElementById("usuario").value;
-    var Contraseña = document.getElementById("pass").value;
-
-    if (usuario == "garciaad" && Contraseña == "12345") {
-        Swal.fire('Any fool can use a computer')
-
-    }
-    else {
-        Swal.fire('Any fool can use a')
-
-    }
-}
-
 </script>
+
 
 <style>
 *{
@@ -46,19 +35,14 @@ function validar() {
 }
 
 .home{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-image: url('https://s3.amazonaws.com/arc-wordpress-client-uploads/infobae-wp/wp-content/uploads/2019/05/14172752/Vancouver-1.jpg');
-  background-size: cover;
-  background-attachment: fixed;
+display: flex;
+align-items: center;
+justify-content: center;
+background-image: url('https://s3.amazonaws.com/arc-wordpress-client-uploads/infobae-wp/wp-content/uploads/2019/05/14172752/Vancouver-1.jpg');
+background-size: cover;
+background-attachment: fixed;
 }
 
-
-.login{
-    width: 100%;
-    height: 100%;
-}
 
 .loginInfo{
     width: 500px;

@@ -1,5 +1,5 @@
 <template>
-  <div class="about">
+<div class="about">
     <div class="loginInfo">
             <h1>FOLKS</h1>
             <h3>Let's get linked!</h3>
@@ -22,7 +22,7 @@
                 <img src="https://www.snapchat.com/static/style-guide/download/appstore.svg" alt="">
             </div>
         </div>
-  </div>
+</div>
 </template>
 
 <style>

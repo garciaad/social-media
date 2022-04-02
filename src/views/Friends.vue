@@ -3,7 +3,7 @@
         <div class="pagetop">
         <div class="topInfo col d-flex align-items-center justify-content-center">
             <div class="profilePic col-2">
-                <img src="img/profilePic.png" alt="Alex profile picture">
+                <img src="@/assets/friends.jpg" alt="Alex profile picture">
             </div>
             <div class="head">
                 <h1>Alexander Garcia Caballero</h1>
