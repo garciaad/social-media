@@ -5,14 +5,26 @@
     <router-link to="/latest">Latest</router-link> |
     <router-link to="/profile">Profile</router-link> |
     <router-link to="/friends">Friends</router-link> |
-    
-
   </nav>
+
+  
+
   <router-view/>
 
 </template>
 
 <script>
+import HelloWorld from '@/components/HelloWorld.vue'
+
+export default {
+  name: 'app',
+  components: {
+    HelloWorld,
+    
+  }
+}
+
+
 
 </script>
 
@@ -31,6 +43,7 @@
 nav {
   padding: 20px;
   background-color: #000;
+  justify-content: end;
 
 }
 

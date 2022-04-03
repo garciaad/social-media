@@ -6,12 +6,10 @@
             <div class="form">
                 <input type="text" name="usuario" id="usuario" v-model="usuario">
                 <input type="password" name="pass" id="pass" v-model="password">
-                <button class="log btn-dark" @click="showAlert">Login</button>
-                <h4>Forgot password</h4>
+                <button @click="logg" class="log btn-dark">Login</button>
+                
             </div>
-            <h4>
-                <a href="../AboutView.vue">Sign up!</a>
-            </h4>
+            
 
             <p>Get the app</p>
 
@@ -19,13 +17,46 @@
                 <img src="@/assets/googleplay.svg" alt="">
                 <img src="@/assets/iosapp.svg" alt="">
             </div>
+
+
         </div>
-
-
 </div>
+
 </template>
 
 <script>
+export default {
+    methods: {
+        logg(){
+            var usuario = document.getElementById("usuario").value;
+            var Contraseña = document.getElementById("pass").value;
+            if (usuario == "garciaad" && Contraseña == "12345") {
+            this.$swal({
+            position: 'center',
+            icon: 'success',
+            title: 'Welcome back!',
+            showConfirmButton: false,
+            timer: 1700
+});
+    }
+    else {
+            this.$swal({
+            position: 'center',
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Double check your info!',
+            showConfirmButton: false,
+            timer: 1700
+            
+        })
+    }
+
+        },
+        
+    }
+
+    
+}
 </script>
 
 

@@ -8,11 +8,11 @@
             </div>
             <div class="head">
                 <h1>Alexander Garcia Caballero</h1>
-                <h2>alexgarcia31</h2>
+                <h2>garciaad</h2>
                 <ul>
-                    <li>110 posts</li>
-                    <li>170 followers</li>
-                    <li>165 following</li>
+                    <li>8 posts</li>
+                    <li>10 followers</li>
+                    <li>10 following</li>
                 </ul>
             </div>
         </div>
@@ -22,9 +22,10 @@
         <div class="child-page-listing">
             <h2 class="tittle text-center">POSTS</h2>
             <div class="galery">
+                <div>
                 <article id="3685" class="location-listing">
                     <a class="location-title" href="#">
-                        Likes comments </a>
+                        San Francisco </a>
                     <div class="location-image">
                         <a href="#">
                             <img width="300" height="169"
@@ -32,7 +33,16 @@
                                 alt="san francisco"> </a>
                     </div>
                 </article>
+                <div class="likenmail d-flex align-items-center justify-content-center">
+                <button @click="like" class="btn-danger">🤍</button>
+                <span class="counter">{{counter}}Likes</span>
+                <form class="mailButton " action="mailto:alexgc0731@gmail.com" method="post" name="form1">
+                <input class="btn-primary" type="submit" value="&#128231;">
+                </form>
+                </div>
+                </div>
 
+                <div>
                 <article id="3688" class="location-listing">
                     <a class="location-title" href="#">
                         London </a>
@@ -43,7 +53,16 @@
                                 alt="london"> </a>
                     </div>
                 </article>
+                <div class="likenmail d-flex align-items-center justify-content-center">
+                <button @click="like1" class="btn-danger">🤍</button>
+                <span class="counter">{{counter1}}Likes</span>
+                <form class="mailButton" action="mailto:alexgc0731@gmail.com" method="post" name="form1">
+                <input class="btn-primary" type="submit" value="&#128231;">
+                </form>
+                </div>
+                </div>
 
+                <div>
                 <article id="3691" class="location-listing">
                     <a class="location-title" href="#">
                         New York </a>
@@ -55,7 +74,16 @@
                     </div>
 
                 </article>
+                <div class="likenmail d-flex align-items-center justify-content-center">
+                <button @click="like2" class="btn-danger">🤍</button>
+                <span class="counter">{{counter2}}Likes</span>
+                <form class="mailButton " action="mailto:alexgc0731@gmail.com" method="post" name="form1">
+                <input class="btn-primary" type="submit" value="&#128231;">
+                </form>
+                </div>
+                </div>
 
+                <div>
                 <article id="3694" class="location-listing">
                     <a class="location-title" href="#">
                         Cape Town </a>
@@ -66,7 +94,16 @@
                                 alt="cape town"> </a>
                     </div>
                 </article>
+                <div class="likenmail d-flex align-items-center justify-content-center">
+                <button @click="like3" class="btn-danger">🤍</button>
+                <span class="counter">{{counter3}}Likes</span>
+                <form class="mailButton " action="mailto:alexgc0731@gmail.com" method="post" name="form1">
+                <input class="btn-primary" type="submit" value="&#128231;">
+                </form>
+                </div>
+                </div>
 
+                <div>
                 <article id="3697" class="location-listing">
                     <a class="location-title" href="#">
                         Beijing </a>
@@ -77,7 +114,16 @@
                                 alt="beijing"> </a>
                     </div>
                 </article>
+                <div class="likenmail d-flex align-items-center justify-content-center">
+                <button @click="like4" class="btn-danger">🤍</button>
+                <span class="counter">{{counter4}}Likes</span>
+                <form class="mailButton " action="mailto:alexgc0731@gmail.com" method="post" name="form1">
+                <input class="btn-primary" type="submit" value="&#128231;">
+                </form>
+                </div>
+                </div>
 
+                <div>
                 <article id="3700" class="location-listing">
                     <a class="location-title" href="#">
                     Paris </a>
@@ -88,7 +134,16 @@
                         </a>
                     </div>
                 </article>
+                <div class="likenmail d-flex align-items-center justify-content-center">
+                <button @click="like5" class="btn-danger">🤍</button>
+                <span class="counter">{{counter5}}Likes</span>
+                <form class="mailButton " action="mailto:alexgc0731@gmail.com" method="post" name="form1">
+                <input class="btn-primary" type="submit" value="&#128231;">
+                </form>
+                </div>
+                </div>
 
+                <div>
                 <article id="3700" class="location-listing">
                     <a class="location-title" href="#">
                     Paris </a>
@@ -99,7 +154,16 @@
                         </a>
                     </div>
                 </article>
+                <div class="likenmail d-flex align-items-center justify-content-center">
+                <button @click="like6" class="btn-danger">🤍</button>
+                <span class="counter">{{counter6}}Likes</span>
+                <form class="mailButton " action="mailto:alexgc0731@gmail.com" method="post" name="form1">
+                <input class="btn-primary" type="submit" value="&#128231;">
+                </form>
+                </div>
+                </div>
 
+                <div>
                 <article id="3700" class="location-listing">
                     <a class="location-title" href="#">
                     Paris </a>
@@ -110,6 +174,14 @@
                         </a>
                     </div>
                 </article>
+                <div class="likenmail d-flex align-items-center justify-content-center">
+                <button @click="like7" class="btn-danger">🤍</button>
+                <span class="counter">{{counter7}}Likes</span>
+                <form class="mailButton " action="mailto:alexgc0731@gmail.com" method="post" name="form1">
+                <input class="btn-primary" type="submit" value="&#128231;">
+                </form>
+                </div>
+                </div>
             </div>
         </div>
     </div>
@@ -117,14 +189,69 @@
 </div>
 </template>
 
-<style>
-* {
+<script>
+export default {
+    data(){
+        return{
+            counter: 0,
+            counter1: 0,
+            counter2: 0,
+            counter3: 0,
+            counter4: 0,
+            counter5: 0,
+            counter6: 0,
+            counter7: 0,
+            counter8: 0,
+        }
+    },
+    methods: {
+        like(){
+            this.counter++
+        },
+        like1(){
+            this.counter1++
+        },
+        like2(){
+            this.counter2++
+        },
+        like3(){
+            this.counter3++
+        },
+        like4(){
+            this.counter4++
+        },
+        like5(){
+            this.counter5++
+        },
+        like6(){
+            this.counter6++
+        },
+        like7(){
+            this.counter7++
+        },
+        
+    }
+
     
+}
+</script>
+
+<style>
+
+.topInfo{
+    padding: 3%;
+}
+
+.topInfo img{
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
 }
 
 .pageBody {
     padding: 20px;
     font-family: sans-serif;
+    margin-bottom: 1%;
 }
 
 img {
@@ -184,6 +311,10 @@ h2 {
 
 .location-listing:hover .location-image img {
     filter: blur(2px);
+}
+
+.likenmail{
+    padding: 10%;
 }
 
 

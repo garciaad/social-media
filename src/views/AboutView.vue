@@ -3,17 +3,15 @@
     <div class="loginInfo">
             <h1>FOLKS</h1>
             <h3>Let's get linked!</h3>
-            <div>
-                
-                <input type="text" placeholder="Email">
-                <input type="text" placeholder="Full name">
-                <input type="text" placeholder="Username">
-                <input type="password" placeholder="Password">
-                <button class="btn-dark">Sign up</button>
+            <div> 
+                <input type="text" placeholder="Email" id="mail" v-model="mail">
+                <input type="text" placeholder="Full name" id="fullname" v-model="fullname">
+                <input type="text" placeholder="Username" id="username" v-model="username">
+                <input type="password" placeholder="Password" id="pass" v-model="pass">
+                <button @click="signup" class="log btn-dark">Sign up</button>                
             </div>
-            <h4>
-                <a href="../">Sign up!</a>
-            </h4>
+            
+
 
             <p>Get the app</p>
 
@@ -24,6 +22,45 @@
         </div>
 </div>
 </template>
+
+<script>
+export default {
+    methods: {
+        signup(){
+            var email = document.getElementById("mail").value;
+            var fullN = document.getElementById("fullname").value;
+            var usuario = document.getElementById("username").value;
+            var Contraseña = document.getElementById("pass").value;
+
+            
+            if ((email=="alex@mail.com") && (fullN=="alex garcia") && (usuario == "garciaad") && (Contraseña == "12345")) {
+            this.$swal({
+            position: 'center',
+            icon: 'success',
+            title: 'Your register is complete!',
+            showConfirmButton: false,
+            timer: 1700
+});
+    }
+    else {
+            this.$swal({
+            position: 'center',
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Double check your info!',
+            showConfirmButton: false,
+            timer: 1700
+            
+        })
+    }
+
+        },
+        
+    }
+
+    
+}
+</script>
 
 <style>
 *{
