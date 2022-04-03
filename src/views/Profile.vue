@@ -146,11 +146,11 @@
                 <div>
                 <article id="3700" class="location-listing">
                     <a class="location-title" href="#">
-                    Paris </a>
+                    Puerto rico </a>
                     <div class="location-image">
                         <a href="#">
                             <img width="300" height="169"
-                                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/paris-768x432.jpg" alt="paris">
+                                src="https://media.traveler.es/photos/6137783a8f298b3a7a5bd920/16:9/w_2580,c_limit/34555.jpg" alt="paris">
                         </a>
                     </div>
                 </article>
@@ -166,11 +166,11 @@
                 <div>
                 <article id="3700" class="location-listing">
                     <a class="location-title" href="#">
-                    Paris </a>
+                    Ontario </a>
                     <div class="location-image">
                         <a href="#">
                             <img width="300" height="169"
-                                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/paris-768x432.jpg" alt="paris">
+                                src="https://d36tnp772eyphs.cloudfront.net/blogs/2/2019/11/shutterstock_625422734.jpg" alt="paris">
                         </a>
                     </div>
                 </article>
